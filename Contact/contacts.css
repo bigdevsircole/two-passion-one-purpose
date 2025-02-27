@@ -1,0 +1,232 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px;
+  background-image: url('/asset/images/caleb-yinusa-header-pix.jpg');
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  font-size: 4em;
+  font-weight: bold;
+  color: #f2f2f2;
+  text-align: center;
+  font-family: cursive;
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #f6ffff;
+  font-size: 2em;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.nav a:hover {
+  background-color: #4e9f8e;
+}
+
+.contactsection {
+  box-sizing: border-box;
+  padding: 32px;
+  align-items: center;
+  background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);
+  display: flex;
+  justify-content: center;
+  min-height: auto;
+  color: rgb(255, 255, 255);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.contactsection img {
+  box-sizing: border-box;
+  margin: 0px 0px 0px 128px;
+  width: 708.992px;
+  height: 517.352px;
+  max-width: 100%;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+form {
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  padding: 30px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  color: rgb(15, 23, 42);
+  width: 400px;
+  height: auto;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+form h1 {
+  text-align: center;
+  color: #19b34a;
+}
+
+label {
+  display: block;
+  margin: 5px;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  margin: 5px;
+}
+
+button {
+  margin-left: 7px;
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  margin-top: 50px;
+  background-color: #198f3e;
+  color: white;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .logo {
+    font-size: 3em;
+  }
+
+  .nav a {
+    font-size: 1.5em;
+  }
+
+  .contactsection img {
+    margin: 0px 0px 0px 64px;
+    width: 300px;
+    height: auto;
+  }
+
+  form {
+    width: 350px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .nav a {
+    font-size: 1.2em;
+    padding: 8px 10px;
+  }
+
+  .contactsection {
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  .contactsection img {
+    margin: 0;
+    width: 300px;
+    height: auto;
+  }
+
+  form {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    font-size: 2em;
+  }
+
+  .nav a {
+    font-size: 1em;
+  }
+
+  .contactsection {
+    padding: 10px;
+  }
+
+  form {
+    padding: 20px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.5em;
+  }
+
+  .nav a {
+    font-size: 0.9em;
+  }
+
+  .contactsection img {
+    width: 300px;
+    height: auto;
+  }
+
+  form {
+    padding: 15px;
+  }
+
+  form h1 {
+    font-size: 1.5em;
+  }
+
+  input, select, button {
+    font-size: 0.9em;
+  }
+}
